@@ -8,36 +8,70 @@
         <title>urbanKicks</title>
     </head>
     <body>
+
+        <div id="grid_container">
         <header>
+            <!--Navigasjonsbar-->
             <nav>
-                <ul>
+                <!--Hamburger meny-->
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <ul class="navbar">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/produktside.html">Produkter</a></li>
                     <li><a href="#">Om oss</a></li>
                 </ul>
+
+                <!--Logo-->
+                <h1 class="logo"><a href="/index.html" class="urban">urban</a><a href="/index.html" class="Kicks">Kicks</a></h1>
+
+                <!--Ikoner-->
+                <div id="ikoner">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="/handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
             </nav>
-            <section>
-                <h1><a href="/index.html">urbanKicks</a></h1>
-            </section>
-            <a href="/handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <i class="fa-solid fa-magnifying-glass"></i>
         </header>
 
         <main>
+            <!--Hoveddelen på siden-->
             <section>
-                <img src="#" alt="">
-                <p>Trenger du nye sko? </p>
+                <!--Bildet som dekker første del av siden-->
+                <!--Bildet ble lagt til i css for å dekke hele siden som et bakgrunnsbilde-->
+                
+                <!--Tekst på forsiden-->
+                <p>Trenger du nye sko?</p>
+                <br>
                 <p>Sjekk ut våre mest populære sko her</p>
-                <h3>Trykk her!</h3>
+               
+                <!--Knapp på forsiden-->
+                <h3><a id="knapp" href="/produktside.html">Trykk her!</a></h3>
             </section>
-            <section>
+            <div id="produkt_liste">
                 <h2>Anbefalt for deg</h2>
-            </section>
+            </div>
         </main>
 
         <footer>
 
         </footer>
+
+        </div>
+
+        <script>
+            // Finn navigasjonsmenyen
+            let x = document.querySelector(".navbar")
+            // Legg til en hendelseslytter for klikk på menyikonet (ham)
+            document.getElementById("ham").addEventListener("click", (e) => {
+                // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+                if (x.className === "navbar") {
+                    // Hvis ikke, legg til klassen for responsiv meny
+                    x.className += " responsive";
+                } else {
+                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                    x.className = "navbar"
+                }
+            })
+        </script>
 
     </body>
 </html>
