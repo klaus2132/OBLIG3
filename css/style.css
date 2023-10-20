@@ -82,7 +82,7 @@ main{
 }
 
 
-main section{
+#forside{
     /*Bakgrunnsbilde*/
     background-image: url("/img/ForsideBilde.jpg");
     background-size: auto;
@@ -125,13 +125,159 @@ main section p{
     font-size: 1.2rem;
 }
 
-#produktside {
+
+
+
+
+
+/*Design på produktsiden*/
+
+#produktside{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#produktside img{
-    max-width: 100%;
+
+#bildeOgPiler{
+    display: flex;
+    flex-direction: row;
+}
+
+#bildeOgPiler img{
+    width: 80%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bildeOgPiler i{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+#velg-storrelse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 1.5rem;
+    width: 75%;
+}
+
+#pris-knapp{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D40000;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#produktside p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    margin-top: none;
+}
+
+
+/*Designer handlekurv siden*/
+#handlekurv{
+    border-style: solid;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#handlekurv h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#handlekurv-produkt img{
+    width: 30%;
+}
+
+#handlekurv-produkt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#info-produkt div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#oppsummering{
+    display: flex;
+    justify-content: space-evenly;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;   
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+#handlekurv h4{
+    display: flex;
+    justify-content: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+#levering{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levering div{
+    display: flex;
+    align-items: center;
+}
+
+
+#hvit-box{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+#gronn-box{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+#rabatt{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#rabatt div{
+    width: 50%;
+    height: 1.5rem;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+
 }
