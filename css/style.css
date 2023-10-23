@@ -259,7 +259,7 @@ main section p{
     margin-right: 1rem;
 }
 
-#valg-av-levering div{
+#valg-av-levering article{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -309,7 +309,7 @@ footer{
 }
 
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 800px) {
         /* Endrer grid-malen for bredere skjermer */
         #grid-container {
             grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -415,5 +415,6 @@ footer{
         #sidebar-hoyre h3{
             display: block;
         } 
-
     }
+
+

@@ -8,88 +8,91 @@
         <title>urbanKicks</title>
     </head>
     <body>
-        <header>
-            <!--Navigasjonsbar-->
-            <nav>
-                <!--Hamburger meny-->
-                <i id="ham" class="fa-solid fa-bars"></i>
-                <ul class="navbar">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/produktside.html">Produkter</a></li>
-                    <li><a href="#">Om oss</a></li>
-                </ul>
+        <div id="grid_container">
+            <header>
+                <!--Navigasjonsbar-->
+                <nav>
+                    <!--Hamburger meny-->
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <ul class="navbar">
+                        <li><a href="/index.html">Hjem</a></li>
+                        <li><a href="/produktside.html">Produkter</a></li>
+                        <li><a href="#">Om oss</a></li>
+                    </ul>
 
-                <!--Logo-->
-                <h1 class="logo"><a href="/index.html" class="urban">urban</a><a href="/index.html" class="Kicks">Kicks</a></h1>
+                    <!--Logo-->
+                    <h1 class="logo"><a href="/index.html" class="urban">urban</a><a href="/index.html" class="Kicks">Kicks</a></h1>
 
-                <!--Ikoner-->
-                <div id="ikoner">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="/handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </nav>
-        </header>
+                    <!--Ikoner-->
+                    <div id="ikoner">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="/handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
+            </header>
 
-        <main id="produktside">
-            <!--Produktnavn-->
-            <section id="produktside-bred-skjerm">
-                <section id="sidebar-venstre">
-                    <h2 id="produkt-overskrift">HVITE NIKE AIR MAX</h2>
+            <main id="produktside">
+                <!--Produktnavn-->
+                <section id="produktside-bred-skjerm">
+                    <section id="sidebar-venstre">
+                        <h2 id="produkt-overskrift">HVITE NIKE AIR MAX</h2>
 
-                    <!--Bilde av produktet-->
-                    <section id="bildeOgPiler">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <img src="/img/ProduktBilde.jpg" alt="Bilde av produktet">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </section>        
+                        <!--Bilde av produktet-->
+                        <section id="bildeOgPiler">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <img src="/img/ProduktBilde.jpg" alt="Bilde av produktet">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </section>        
+                    </section>
+                    <!--Velg størrelse knapp-->
+                    <section id="velg-storrelse">
+                        <h3>Velg din størrelse</h3>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </section>
+
+                    <section id="sidebar-hoyre">
+                        <h3>Velg din størrelse</h3>
+                        <article class="str-knapper">
+                            <h4 class="storrelse">38</h4>
+                            <h4 class="storrelse">38.5</h4>
+                            <h4 class="storrelse">39</h4>
+                            <h4 class="storrelse">39.5</h4>
+                        </article>
+                        <article class="str-knapper">
+                            <h4 class="storrelse">40</h4>
+                            <h4 class="storrelse">40.5</h4>
+                            <h4 class="storrelse">41</h4>
+                            <h4 class="storrelse">41.5</h4>
+                        </article>
+                        <article class="str-knapper">
+                            <h4 class="storrelse">42</h4>
+                            <h4 class="storrelse">42.5</h4>
+                            <h4 class="storrelse">43</h4>
+                            <h4 class="storrelse">43.5</h4>
+                        </article>
+                        <div class="str-knapper">
+                            <h4 class="storrelse">44</h4>
+                        </div>
+
+                    <!--Prisbox-->
+                        <h4 id="pris-knapp">1799,-</h4>
+
+                        <a id="legg-i-handlekurv" href="#">Legg til i handle kurv</a>
+                    </section>
                 </section>
-                <!--Velg størrelse knapp-->
-                <section id="velg-storrelse">
-                    <h3>Velg din størrelse</h3>
-                    <i class="fa-solid fa-arrow-down"></i>
-                </section>
 
-                <section id="sidebar-hoyre">
-                    <h3>Velg din størrelse</h3>
-                    <div class="str-knapper">
-                        <h4 class="storrelse">38</h4>
-                        <h4 class="storrelse">38.5</h4>
-                        <h4 class="storrelse">39</h4>
-                        <h4 class="storrelse">39.5</h4>
-                    </div>
-                    <div class="str-knapper">
-                        <h4 class="storrelse">40</h4>
-                        <h4 class="storrelse">40.5</h4>
-                        <h4 class="storrelse">41</h4>
-                        <h4 class="storrelse">41.5</h4>
-                    </div>
-                    <div class="str-knapper">
-                        <h4 class="storrelse">42</h4>
-                        <h4 class="storrelse">42.5</h4>
-                        <h4 class="storrelse">43</h4>
-                        <h4 class="storrelse">43.5</h4>
-                    </div>
-                    <div class="str-knapper">
-                        <h4 class="storrelse">44</h4>
-                    </div>
-
-                <!--Prisbox-->
-                    <h4 id="pris-knapp">1799,-</h4>
-
-                    <a id="legg-i-handlekurv" href="#">Legg til i handle kurv</a>
-                </section>
-            </section>
-
-            <h3>Produkt beskrivelse:</h3>
-            <p>Hvite Air Max-sko, med sitt ikoniske design og synlige luftputeteknologi, har vært en favoritt blant sportsentusiaster og motebevisste i flere tiår. Deres tidløse utseende gjør dem allsidige, og de passer like bra til trening som til daglig stil. Med forskjellige modeller å velge mellom, forblir hvite Air Max-sko en evig trend.</p>
-    
-        </main>
+                <h3>Produkt beskrivelse:</h3>
+                <p>Hvite Air Max-sko, med sitt ikoniske design og synlige luftputeteknologi, har vært en favoritt blant sportsentusiaster og motebevisste i flere tiår. Deres tidløse utseende gjør dem allsidige, og de passer like bra til trening som til daglig stil. Med forskjellige modeller å velge mellom, forblir hvite Air Max-sko en evig trend.</p>
         
-        <footer>
-            <h3>Epost : urbanKicks@mail.no</h3>
-            <h3>Følg oss på Instagram : urbanKicks</h3>
-            <h3>Følg oss på X : urbanKicks</h3>
-        </footer>
+            </main>
+        
+            <footer>
+                <h3>Epost : urbanKicks@mail.no</h3>
+                <h3>Følg oss på Instagram : urbanKicks</h3>
+                <h3>Følg oss på X : urbanKicks</h3>
+            </footer>
+
+        </div>
 
         <script>
             // Finn navigasjonsmenyen
